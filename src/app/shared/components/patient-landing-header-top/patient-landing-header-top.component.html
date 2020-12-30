@@ -1,0 +1,42 @@
+<div class="header-topnav mm--header mat-elevation-z2">
+  <div class="container">
+    <div class="topnav">
+      <!-- App Logo -->
+      <div class="topbar-branding p-0 m-0 ">
+        <img src="assets/images/ark/logo-home.png" alt="" class="app-logo">
+      </div>
+
+      <ul class="menu ml-auto" *ngIf="!layoutConf.isMobile">
+        <li>
+          <a>For Providers</a>
+        </li> 
+        <li>
+          <a>For Vendors</a>
+        </li> 
+        <li>
+          <a class="pr-0">
+            <button mat-stroked-button color="primary">Login</button>
+          </a>
+        </li>
+        <li>
+          <a class="pr-0">
+            <button mat-flat-button color="primary">Sign Up for Free</button>
+          </a>
+        </li>
+      </ul> 
+      <!-- End Navigation -->
+      
+     
+     
+      <!-- Mobile screen menu toggle -->
+      <button 
+      mat-icon-button 
+      class="mr-16" 
+      (click)="toggleSidenav()" 
+      *ngIf="layoutConf.isMobile">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    </div>
+  </div>
+</div>

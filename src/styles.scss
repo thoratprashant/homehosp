@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: auto;
+}
+.mm--header{
+    padding: 16px 0;
+    box-shadow: 0 0 20px 0 rgba(27, 28, 31, 0.3) !important;
+    .topbar-branding {
+        cursor: pointer;        
+    }
+    .topnav{
+        .menu {
+            height: auto;
+            padding-right: 0;
+            li{
+                a{
+                    font-weight: 500;
+                    color: #1fa4dd;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

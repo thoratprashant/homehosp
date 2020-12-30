@@ -1,0 +1,29 @@
+<div class="header-topnav mat-elevation-z2">
+  <div class="container">
+    <div class="topnav">
+      <!-- App Logo -->
+      <div class="topbar-branding">
+        <img src="assets/images/egret.png" alt="" class="app-logo">
+      </div>
+
+      <ul class="menu ml-auto" *ngIf="!layoutConf.isMobile">
+        <li>a</li>
+        <li>2</li>
+      </ul>
+      <span fxFlex></span>
+      <!-- End Navigation -->
+      
+     
+     
+      <!-- Mobile screen menu toggle -->
+      <button 
+      mat-icon-button 
+      class="mr-16" 
+      (click)="toggleSidenav()" 
+      *ngIf="layoutConf.isMobile">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    </div>
+  </div>
+</div>
