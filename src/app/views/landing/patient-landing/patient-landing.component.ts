@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientLandingComponent implements OnInit {
 
+  howDoesWork:any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.howDoesWork = [
+      {
+        hdwImg:'assets/images/ark/choose.png',
+        hdwName:'1. Enroll',
+        hdwDesc:'Creating an account takes only few steps and is done in a minute',
+      },
+      {
+        hdwImg:'assets/images/ark/choose.png',
+        hdwName:'2. Choose',
+        hdwDesc:'Search through our network of certified doctors and choose the one thats right for you.',
+      },
+      {
+        hdwImg:'assets/images/ark/visit.png',
+        hdwName:'3. Visit',
+        hdwDesc:'Our web based visits use secure, high-quality streaming video. See and speak with a doctor from home.',
+      }
+    ]
   }
 
 }

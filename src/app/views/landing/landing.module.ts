@@ -23,11 +23,10 @@ import { LandingRoutes } from './landing.routing';
 import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout'; 
+import { PatientLandingComponent } from './patient-landing/patient-landing.component';
 
 @NgModule({
-  imports: [
-    MatExpansionModule,
-    MatTableModule,
+  imports: [     
     CommonModule,
     FormsModule,
     MatListModule,
@@ -48,9 +47,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ChartsModule,
     FileUploadModule,
     SharedModule,
+    MatExpansionModule,
+    MatTableModule,
     RouterModule.forChild(LandingRoutes)
+
+   
   ],
   declarations: [ 
+    PatientLandingComponent
   ]
 })
 export class LandingModule { }
