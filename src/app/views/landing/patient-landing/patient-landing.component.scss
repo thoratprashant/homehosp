@@ -1,4 +1,7 @@
 .patient--landing--wrapper{
+    .container{
+        max-width: 1137px;
+    }
     .main--heading{
         font-size: 42px;
         font-weight: 500;
@@ -26,7 +29,7 @@
                         margin: 0;
                         background-color: #f5f5f5;
                         border-radius: 4px;
-                        padding: 60px 0 30px 0;
+                        padding: 60px 25px 30px 25px;
                         width: 100%;
                         .mat-card-header{
                             justify-content: center;
@@ -55,6 +58,62 @@
             margin-top: 35px;
         }
     }
+    .section--three{
+        border-top: 1px solid #f5f5f5;
+        p{
+            &.desc{
+                color: #666;
+                font-size: 18px;
+                padding: 0 15%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        .visitors--throughts{
+            .rating{
+                list-style-type: none;
+                padding: 0;
+                margin: 0 0 10px 0;
+                justify-content: flex-start;
+                li{
+                    .mat-icon{
+                        color: #f7cb03;
+                        height: 25px;
+                        width: 25px;
+                        font-size: 25px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+                color: #231f20;
+                line-height: 1.63;
+                margin-bottom: 20px;
+            }
+            h6{                
+                font-size: 18px;
+                font-weight: bold;
+                color: #231f20;
+            }
+        }
+    }
+    .section--five{
+        .img--data{
+            h1{
+                font-size: 42px;
+                color: #231f20;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 22px;
+                color: #666;
+            }
+        }
+    }
+
+
+
     .mat-flat-button{ 
         line-height: 45px;
         font-size: 16px;

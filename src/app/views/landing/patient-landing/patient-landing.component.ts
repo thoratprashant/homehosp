@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class PatientLandingComponent implements OnInit {
 
   howDoesWork:any;
+  visitorsThrough:any;
 
   constructor() { }
 
   ngOnInit(): void {
     this.howDoesWork = [
       {
-        hdwImg:'assets/images/ark/choose.png',
+        hdwImg:'assets/images/ark/enroll.png',
         hdwName:'1. Enroll',
         hdwDesc:'Creating an account takes only few steps and is done in a minute',
       },
@@ -27,6 +28,20 @@ export class PatientLandingComponent implements OnInit {
         hdwImg:'assets/images/ark/visit.png',
         hdwName:'3. Visit',
         hdwDesc:'Our web based visits use secure, high-quality streaming video. See and speak with a doctor from home.',
+      }
+    ]
+    this.visitorsThrough = [
+      {
+        throught:"Dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's lorem dummy",
+        throughtBy:"Carly R. Smith"
+      },
+      {
+        throught:"Dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's lorem dummy",
+        throughtBy:"Herbert K. Daum"
+      },
+      {
+        throught:"Dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's lorem dummy",
+        throughtBy:"Bradley J. Sherman"
       }
     ]
   }

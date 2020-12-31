@@ -25,11 +25,115 @@
                         </mat-card>
                     </div>
                 </div>
+                <button mat-flat-button color="primary" class="get--started--btn mb--100">Get Started</button>
+            </div>
+        </section>
 
-                <button mat-flat-button color="primary" class="get--started--btn">Get Started</button>
+        <section class="section--three mb--100">
+            <div class="container" fxLayout="column" fxLayoutAlign="start center">
+                <div fxLayout="row">
+                    <div fxFlex="100">
+                        <h2 class="main--heading text-center mt--100">
+                            Homehosp makes visits easier
+                        </h2>
+                        <p class="mb--100 desc">Doctor consultations have never been more conveninet, Now you can have
+                            live, on-demand video
+                            visits with a physician of your choice. Doctors, specialists are just a click away.</p>
+                    </div>
+                </div>
+                <div fxLayout="row wrap" fxFlex="100" class="visitors--throughts" fxLayoutAlign="space-between center">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="31"
+                        *ngFor="let i of visitorsThrough">
+                        <ul class="rating">
+                            <li>
+                                <mat-icon>star</mat-icon>
+                            </li>
+                            <li>
+                                <mat-icon>star</mat-icon>
+                            </li>
+                            <li>
+                                <mat-icon>star</mat-icon>
+                            </li>
+                            <li>
+                                <mat-icon>star_half</mat-icon>
+                            </li>
+                            <li>
+                                <mat-icon>star_half</mat-icon>
+                            </li>
+                        </ul>
+                        <p> {{i.throught}} </p>
+                        <h6> {{i.throughtBy}} </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--five mt--100 mb--100">
+            <div class="container">
+                <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
+                    fxLayoutAlign.xs="center center">
+                    <div fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="55" fxFlex.lg="55" fxFlex.xl="55">
+                        <img src="assets/images/ark/simple-userfriendly.png" alt="img">
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="45" fxFlex.md="45" fxFlex.lg="45" fxFlex.xl="45">
+                        <h1> <strong> Simple and user friendly </strong></h1>
+                        <p>Be seen / Be Treated from Anywhere</p>
+                    </div>
+                </div>
+
+
 
             </div>
         </section>
+
+        <section class="section--five mt--100 mb--100">
+            <div class="container">
+                <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
+                    fxLayoutAlign.xs="center center">
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <h1> <strong> Private and Secure </strong></h1>
+                        <p> All data is encrypted and none of your information is stored nor recorded. </p>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <img src="assets/images/ark/private.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--five mt--100 mb--100">
+            <div class="container">
+                <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
+                    fxLayoutAlign.xs="center center">
+                    <div fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <img src="assets/images/ark/location.png" alt="img">
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="45" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <h1> <strong> Location </strong></h1>
+                        <p> Track doctors and vendors within your location </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--five mt--100 mb--100">
+            <div class="container">
+                <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
+                    fxLayoutAlign.xs="center center">
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                        <h1> <strong> Private Social media group </strong></h1>
+                        <p> You can chat - post - share files - comment with the members on the platform </p>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="40">
+                        <img src="assets/images/ark/social-media-grp.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
 
     </div>
