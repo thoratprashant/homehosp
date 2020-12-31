@@ -98,6 +98,26 @@
             }
         }
     }
+
+    .section--four{
+        &.red--blue--sec{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            padding-bottom: 30px;
+            .showing{
+                border-radius: 10px;
+                border: solid 2px #fdfeff;
+                padding: 25px 30px;
+                font-size: 31px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
+
+
     .section--five{
         .img--data{
             h1{

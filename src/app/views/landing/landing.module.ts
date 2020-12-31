@@ -24,6 +24,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout'; 
 import { PatientLandingComponent } from './patient-landing/patient-landing.component';
+import { LandingFooterComponent } from './landing-footer/landing-footer.component';
 
 @NgModule({
   imports: [     
@@ -54,7 +55,7 @@ import { PatientLandingComponent } from './patient-landing/patient-landing.compo
    
   ],
   declarations: [ 
-    PatientLandingComponent
+    PatientLandingComponent, LandingFooterComponent
   ]
 })
 export class LandingModule { }
