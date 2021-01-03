@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 
+import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 
 @Component({
   selector: 'app-patient-landing',
@@ -46,4 +47,15 @@ export class PatientLandingComponent implements OnInit {
     ]
   }
 
+  slides = [
+    {
+      'image': 'assets/images/ark/topbanner-1.png',
+       text:'Consult a Doctor Anytime, Anywhere by Phone Calls',
+       para:'See a doctor or therapist from home, using your phone,  tablet or computer. If you’re having a medical emergency,',
+    }, 
+    {
+      'image': 'assets/images/ark/topbanner-2.png', 
+       text:'Consult a Doctor Anytime, Anywhere by Phone Calls'
+    }, 
+  ];
 }

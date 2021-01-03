@@ -25,6 +25,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout'; 
 import { PatientLandingComponent } from './patient-landing/patient-landing.component';
 import { LandingFooterComponent } from './landing-footer/landing-footer.component';
+import { MatCarouselModule } from 'ng-mat-carousel';
 
 @NgModule({
   imports: [     
@@ -50,6 +51,7 @@ import { LandingFooterComponent } from './landing-footer/landing-footer.componen
     SharedModule,
     MatExpansionModule,
     MatTableModule,
+    MatCarouselModule.forRoot(),
     RouterModule.forChild(LandingRoutes)
 
    

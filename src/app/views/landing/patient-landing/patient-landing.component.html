@@ -1,6 +1,31 @@
 <section fxLayout="row wrap" class="patient--landing--wrapper">
     <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
 
+        <section class="section--one">
+            <mat-carousel 
+                timings="200ms ease-in" 
+                [autoplay]="true" 
+                maxWidth="auto"
+                interval="3000" 
+                [loop]="true"
+                [hideArrows]="false"
+                [hideIndicators]="false">
+                
+                <mat-carousel-slide #matCarouselSlide 
+                    *ngFor="let slide of slides"
+                    [image]="slide.image"  
+                    [hideOverlay]="true">
+                    <div class="container">
+                        <h1>{{slide.text}}</h1>
+                        <p>{{slide.para}} <strong>call 911.</strong> </p>
+                        <button mat-flat-button color="primary">Ask a Doctor Online</button>
+                    </div>
+                    
+                </mat-carousel-slide>
+
+            </mat-carousel>
+        </section>
+
         <section class="section--two">
             <div class="container" fxLayout="column" fxLayoutAlign="start center">
                 <div fxFlex fxLayout="row">
@@ -68,24 +93,25 @@
             </div>
         </section>
 
-        <section fxLayout="row" class="section--four mb--100 red--blue--sec" style="background-image: url('assets/images/ark/banner-middle-section.png')">
-            <div class="container"> 
-                <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-between end" >
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="47" fxFlex.xl="47" >
+        <section fxLayout="row" class="section--four mb--100 red--blue--sec"
+            style="background-image: url('assets/images/ark/banner-middle-section.png')">
+            <div class="container">
+                <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-between end">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="47" fxFlex.xl="47">
                         <div class="showing">
-                            We’re showing consumers the 
+                            We’re showing consumers the
                             future of healthcare
                         </div>
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="45" fxFlex.xl="45" >
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="45" fxFlex.xl="45">
                         <div class="showing">
-                            We're empowering providers to 
+                            We're empowering providers to
                             give a better level of care.
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <section class="section--five mt--100 mb--100">
@@ -149,7 +175,7 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
     </div>
 </section>
 <app-landing-footer></app-landing-footer>
