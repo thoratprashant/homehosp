@@ -15,7 +15,62 @@
         margin-top: 100px;
     }
     .section--one{ 
-        
+        ::ng-deep{
+            .carousel-list{
+                height: 70vh !important; 
+                li{
+                    height: 70vh !important;
+                    padding-bottom: 0 !important;
+                }
+            }
+            .mat-mini-fab[disabled][disabled]{
+                background-color: #1fa4dd;
+             }
+            .mat-mini-fab.mat-accent{
+                background-color: #333;                
+            }
+            .mat-focus-indicator[aria-label="Previous slide"],
+            .mat-focus-indicator[aria-label="Next slide"]{
+                display: none;
+            }
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;            
+            .slider--container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                h1{
+                    font-size: 48px;
+                    color: #231f20;
+                    margin-bottom: 25px;
+                    width: 51%;
+                    font-weight: bold;
+                }
+                p{
+                    color: #231f20;
+                    font-size: 18px;
+                    margin-bottom: 45px;
+                    width: 40%;
+                }
+                .call--opt--btn{
+                    width: 225px;
+                    .mat-icon{
+                        width: 25px;
+                        height: 25px;
+                        font-size: 25px;
+                        margin-right: 10px;
+                        font-weight: bold;
+                    }
+                }
+                 
+            }
+        }
     }
     .section--two{
         .works--box{
@@ -130,10 +185,7 @@
                 color: #666;
             }
         }
-    }
-
-
-
+    } 
     .mat-flat-button{ 
         line-height: 45px;
         font-size: 16px;
@@ -141,3 +193,151 @@
     }
 }
 
+@media only screen and (max-width: 599px) {
+    .patient--landing--wrapper .section--one ::ng-deep .carousel-list,
+    .patient--landing--wrapper .section--one ::ng-deep .carousel-list li {
+        height: 33vh !important; 
+    }
+    .patient--landing--wrapper .section--one .container .slider--container h1 {
+        font-size: 23px; 
+        margin-bottom: 10px;
+        width: 100%; 
+    }
+    .patient--landing--wrapper .section--one .container .slider--container p { 
+        font-size: 13px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .patient--landing--wrapper .mat-flat-button {
+        line-height: 40px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .patient--landing--wrapper .section--one .container .slider--container .call--opt--btn {
+        width: 195px;
+    }
+    .patient--landing--wrapper .main--heading{
+        font-size: 22px;
+    }
+    .patient--landing--wrapper .mb--100 {
+        margin-bottom: 25px;
+    }
+    .patient--landing--wrapper .mt--100 {
+        margin-top: 25px;
+    }
+    .patient--landing--wrapper .section--three p.desc{
+        padding: 0 ;
+        font-size: 13px;
+    }
+    .patient--landing--wrapper .section--three .visitors--throughts p {
+        font-size: 13px;  
+        margin-bottom: 10px;
+    }
+    .patient--landing--wrapper .section--three .visitors--throughts .rating li .mat-icon { 
+        height: 19px;
+        width: 19px;
+        font-size: 19px;
+        margin-right: 3px;
+    }
+    .patient--landing--wrapper .section--three .visitors--throughts h6 {
+        font-size: 15px; 
+        margin-bottom: 25px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+    }
+    .patient--landing--wrapper .section--four.red--blue--sec{
+        height: 224px;
+    }
+    .patient--landing--wrapper .section--four.red--blue--sec .showing{
+        padding: 10px 15px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .patient--landing--wrapper .section--five .img--data h1 {
+        font-size: 20px; 
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    .patient--landing--wrapper .section--five .img--data p {
+        font-size: 15px; 
+        text-align: center;
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card { 
+        padding: 35px 15px 20px 15px; 
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card-content h5 { 
+        font-size: 18px;
+        margin: 35px 0 20px 0; 
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card-content p { 
+        font-size: 14px; 
+    }
+    .patient--landing--wrapper .section--five .order--1{
+        order: -1;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .patient--landing--wrapper .section--one ::ng-deep .carousel-list,
+    .patient--landing--wrapper .section--one ::ng-deep .carousel-list li {
+        height: 33vh !important; 
+    }
+    .patient--landing--wrapper .section--one .container .slider--container h1 {
+        font-size: 27px; 
+        margin-bottom: 15px;
+        width: 43%; 
+    }
+    .patient--landing--wrapper .section--one .container .slider--container p { 
+        font-size: 14px;
+        margin-bottom: 35px;
+        width: 45%;
+    }
+    .patient--landing--wrapper .mat-flat-button {
+        line-height: 40px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .patient--landing--wrapper .section--one .container .slider--container .call--opt--btn {
+        width: 195px;
+    }
+    .patient--landing--wrapper .main--heading{
+        font-size: 30px;
+    }
+    .patient--landing--wrapper .mb--100 {
+        margin-bottom: 50px;
+    }
+    .patient--landing--wrapper .mt--100 {
+        margin-top: 50px;
+    }
+    .patient--landing--wrapper .section--three p.desc{
+        padding: 0 5%;
+        font-size: 16px;
+    }
+    .patient--landing--wrapper .section--four.red--blue--sec{
+        height: 224px;
+    }
+    .patient--landing--wrapper .section--four.red--blue--sec .showing{
+        padding: 13px 20px;
+        font-size: 18px
+    }
+    .patient--landing--wrapper .section--five .img--data h1 {
+        font-size: 27px; 
+        margin-bottom: 10px;
+    }
+    .patient--landing--wrapper .section--five .img--data p {
+        font-size: 19px; 
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card { 
+        padding: 35px 15px 20px 15px; 
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card-content h5 { 
+        font-size: 18px;
+        margin: 35px 0 20px 0; 
+    }
+    .patient--landing--wrapper .section--two .works--box .work--steps .mat-card-content p { 
+        font-size: 14px; 
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}

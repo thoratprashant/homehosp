@@ -5,7 +5,7 @@
             <mat-carousel 
                 timings="200ms ease-in" 
                 [autoplay]="true" 
-                maxWidth="auto"
+                maxWidth="auto" 
                 interval="3000" 
                 [loop]="true"
                 [hideArrows]="false"
@@ -16,11 +16,19 @@
                     [image]="slide.image"  
                     [hideOverlay]="true">
                     <div class="container">
-                        <h1>{{slide.text}}</h1>
-                        <p>{{slide.para}} <strong>call 911.</strong> </p>
-                        <button mat-flat-button color="primary">Ask a Doctor Online</button>
-                    </div>
-                    
+                        <div class="slider--container">
+                            <h1>{{slide.text}}</h1>
+                            <p>{{slide.para}} <strong> <a> call 911. </a></strong> </p>
+                            <button fxLayout="row" 
+                                    fxLayoutAlign="start center" 
+                                    mat-flat-button 
+                                    color="primary"
+                                    class="call--opt--btn"> 
+                                    <mat-icon> {{slide.callOpt}} </mat-icon> 
+                                    Ask a Doctor Online
+                            </button>
+                        </div>                        
+                    </div>                    
                 </mat-carousel-slide>
 
             </mat-carousel>
@@ -37,7 +45,7 @@
                 </div>
 
                 <div fxLayout="row wrap" fxFlex="100" class="works--box">
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="31"
+                    <div fxFlex.xs="100" fxFlex.sm="32" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="31"
                         class="work--steps text-center" *ngFor="let i of howDoesWork">
                         <mat-card>
                             <mat-card-header>
@@ -67,7 +75,7 @@
                     </div>
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" class="visitors--throughts" fxLayoutAlign="space-between center">
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="31"
+                    <div fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="31"
                         *ngFor="let i of visitorsThrough">
                         <ul class="rating">
                             <li>
@@ -97,13 +105,13 @@
             style="background-image: url('assets/images/ark/banner-middle-section.png')">
             <div class="container">
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-between end">
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="47" fxFlex.xl="47">
+                    <div fxFlex.xs="100" fxFlex.sm="46" fxFlex.md="46" fxFlex.lg="47" fxFlex.xl="47">
                         <div class="showing">
                             We’re showing consumers the
                             future of healthcare
                         </div>
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="46" fxFlex.lg="45" fxFlex.xl="45">
+                    <div fxFlex.xs="100" fxFlex.sm="46" fxFlex.md="46" fxFlex.lg="45" fxFlex.xl="45">
                         <div class="showing">
                             We're empowering providers to
                             give a better level of care.
@@ -118,7 +126,7 @@
             <div class="container">
                 <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
                     fxLayoutAlign.xs="center center">
-                    <div fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="55" fxFlex.lg="55" fxFlex.xl="55">
+                    <div fxFlex.xs="100" fxFlex.sm="40" fxFlex.md="55" fxFlex.lg="55" fxFlex.xl="55">
                         <img src="assets/images/ark/simple-userfriendly.png" alt="img">
                     </div>
                     <div fxFlex.xs="100" fxFlex.sm="45" fxFlex.md="45" fxFlex.lg="45" fxFlex.xl="45">
@@ -140,7 +148,7 @@
                         <h1> <strong> Private and Secure </strong></h1>
                         <p> All data is encrypted and none of your information is stored nor recorded. </p>
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                    <div fxFlex.xs="100" fxFlex.sm="41" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="order--1">
                         <img src="assets/images/ark/private.png" alt="img">
                     </div>
                 </div>
@@ -151,7 +159,7 @@
             <div class="container">
                 <div fxLayout="row wrap" fxFlex="100" class="img--data" fxLayoutAlign="space-between center"
                     fxLayoutAlign.xs="center center">
-                    <div fxFlex.xs="100" fxFlex.sm="55" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                    <div fxFlex.xs="100" fxFlex.sm="46" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
                         <img src="assets/images/ark/location.png" alt="img">
                     </div>
                     <div fxFlex.xs="100" fxFlex.sm="45" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
@@ -170,7 +178,7 @@
                         <h1> <strong> Private Social media group </strong></h1>
                         <p> You can chat - post - share files - comment with the members on the platform </p>
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="40">
+                    <div fxFlex.xs="100" fxFlex.sm="43" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="40" class="order--1">
                         <img src="assets/images/ark/social-media-grp.png" alt="img">
                     </div>
                 </div>

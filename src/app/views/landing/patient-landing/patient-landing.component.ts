@@ -50,12 +50,16 @@ export class PatientLandingComponent implements OnInit {
   slides = [
     {
       'image': 'assets/images/ark/topbanner-1.png',
-       text:'Consult a Doctor Anytime, Anywhere by Phone Calls',
+       text:'Consult a Doctor Anytime, Anywhere by Video Call',
        para:'See a doctor or therapist from home, using your phone,  tablet or computer. If you’re having a medical emergency,',
+       callOpt: 'call'
     }, 
     {
-      'image': 'assets/images/ark/topbanner-2.png', 
-       text:'Consult a Doctor Anytime, Anywhere by Phone Calls'
+      'image': 'assets/images/ark/topbanner-2.png',
+       text:'Consult a Doctor Anytime, Anywhere by Phone Calls',
+       para:'See a doctor or therapist from home, using your phone,  tablet or computer. If you’re having a medical emergency,',
+       callOpt: 'videocam'
     }, 
+   
   ];
 }

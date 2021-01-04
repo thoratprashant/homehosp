@@ -11,3 +11,47 @@
 .container{
     max-width: 1137px;
 }
+.mm--header{
+    .topnav{
+         .topbar-branding {
+             img{
+                 height: auto;
+             }
+         }
+    }
+} 
+
+@media only screen and (max-width: 599px) {
+    .mm--header{
+        .topnav{
+            justify-content: space-between;
+            &::after{
+                content: none;
+            }
+            .topbar-branding {
+                img{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .mm--header{
+        .topnav{
+            justify-content: space-between;
+            &::after{
+                content: none;
+            }
+            .topbar-branding {
+                img{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }    
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}
