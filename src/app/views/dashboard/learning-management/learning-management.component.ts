@@ -55,7 +55,7 @@ export class LearningManagementComponent implements OnInit {
           },
         },
       },
-      colors: ['#0081FF', '#eee'],
+      colors: ['#1fa4dd', '#eee'],
       stroke: {
         lineCap: 'round',
       },
@@ -135,7 +135,7 @@ export class LearningManagementComponent implements OnInit {
         enabled: false,
       },
 
-      colors: ['#0081ff', '#e95455', '#e97d23'],
+      colors: ['#1fa4dd', '#e95455', '#e97d23'],
       xaxis: {
         axisBorder: {
           show: false,

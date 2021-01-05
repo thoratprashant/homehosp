@@ -24,3 +24,21 @@
         }
     }
 }
+
+// auth header
+.auth--header{
+    background-color: #fff;
+    padding: 12px 30px;
+    img{
+        width: 10%;
+    }
+    p{
+        font-size: 14px;
+        color: #3b4b5f;
+    }
+    .mat-primary{
+        line-height: 38px;
+        padding: 0 21px;
+        margin-left: 18px;
+    }
+}

@@ -12,3 +12,11 @@ button{
     border-radius: 2px;
 }
 ul{list-style-type: none;}
+
+.form-error-msg{
+    margin-top: -17px;
+    font-size: 11px;
+}
+.egret-navy .mat-raised-button:not([class*='mat-elevation-z']){
+    box-shadow: none !important;
+}

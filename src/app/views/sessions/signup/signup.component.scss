@@ -1,0 +1,22 @@
+.auth--wrapper{
+    height: calc(100vh - 63px);
+    overflow: auto;
+    align-items: flex-start;
+    .header--sec{
+        padding: 15px 15px 30px 15px;
+        text-align: center;
+        h2{
+            color: #304156;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            color: #98a0ab;
+            margin: 0;
+            line-height: 17px;
+        }
+        
+    }
+}
+ 

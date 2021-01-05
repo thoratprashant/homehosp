@@ -20,7 +20,7 @@ export class ThemeService {
   },
   {
     'name': 'egret-navy-dark',
-    'baseColor': '#0081ff',
+    'baseColor': '#1fa4dd',
     'isActive': false
   }];
 

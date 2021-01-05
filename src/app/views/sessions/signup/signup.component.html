@@ -1,63 +1,69 @@
-<div class="page-wrap h-full">
+<div class="auth--header"  fxLayout="row" fxLayoutAlign="space-between center">
+  <img src="assets/images/ark/logo-home.png" alt="auth logo"> 
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <p class="mb-0">Already have an account?</p>
+    <button mat-raised-button class="mat-primary">Login</button>
+  </div>
+</div>
+
+<div class="page-wrap auth--wrapper">
   <div class="session-form-hold">
     <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
     <mat-card>
       <mat-card-content>
-        <div class="text-center pt-8 pb-16">
-          <img width="60px" src="assets/images/egret.png" alt="" class="mb-8">
-           <h2>Lets get started</h2>
-          <p class="text-muted m-0">Sign up to use our service</p>
-        </div>
-        <form [formGroup]="signupForm"  (ngSubmit)="signup()">
+
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+          <div class="header--sec">
+            <h2>Create a New Account</h2>
+            <p>Come join the HomeHosp Community! Let's setup 
+              your account</p>
+          </div>
+
           <div class="">
             <mat-form-field class="full-width">
-              <input
-                matInput
-                type="email"
-                name="email"
-                [formControl]="signupForm.controls['email']"
-                placeholder="Your Email"
-                value="">
+              <input type="text" name="firstName" matInput [formControl]="signupForm.controls['firstName']"
+                placeholder="First Name *" value="">
             </mat-form-field>
-            <small 
-              *ngIf="signupForm.controls['email'].hasError('required') && signupForm.controls['email'].touched" 
+            <small
+              *ngIf="signupForm.controls['firstName'].hasError('required') && signupForm.controls['firstName'].touched"
+              class="form-error-msg"> First name is required </small>
+          </div>
+
+          <div class="">
+            <mat-form-field class="full-width">
+              <input type="text" name="lastName" matInput [formControl]="signupForm.controls['lastName']"
+                placeholder="Last Name *" value="">
+            </mat-form-field>
+            <small
+              *ngIf="signupForm.controls['lastName'].hasError('required') && signupForm.controls['lastName'].touched"
+              class="form-error-msg"> Last name is required </small>
+          </div>
+
+          <div class="">
+            <mat-form-field class="full-width">
+              <input type="text" name="contactNumber" matInput [formControl]="signupForm.controls['contactNumber']"
+                placeholder="Contact Number *" value="">
+            </mat-form-field>
+            <small
+              *ngIf="signupForm.controls['contactNumber'].hasError('required') && signupForm.controls['contactNumber'].touched"
+              class="form-error-msg"> Contact Number is required </small>
+          </div>
+
+          <div class="">
+            <mat-form-field class="full-width">
+              <input matInput type="email" name="email" [formControl]="signupForm.controls['email']"
+                placeholder="Your Email" value="">
+            </mat-form-field>
+            <small *ngIf="signupForm.controls['email'].hasError('required') && signupForm.controls['email'].touched"
               class="form-error-msg"> Email is required </small>
 
-              <small 
-                *ngIf="signupForm.controls['email'].hasError('email') && signupForm.controls['email'].touched" 
-                class="form-error-msg"> Invaild email address </small>
+            <small *ngIf="signupForm.controls['email'].hasError('email') && signupForm.controls['email'].touched"
+              class="form-error-msg"> Invaild email address </small>
           </div>
 
-          <div class="">
-            <mat-form-field class="full-width">
-              <input 
-                type="password"
-                name="password"
-                matInput
-                [formControl]="signupForm.controls['password']"
-                placeholder="Password" 
-                value="">
-            </mat-form-field>
-            <small 
-              *ngIf="signupForm.controls['password'].hasError('required') && signupForm.controls['password'].touched" 
-              class="form-error-msg"> Password is required </small>
-          </div>
-          
-          <div class="">
-            <mat-form-field class="full-width">
-              <input
-                type="password"
-                name="confirmPassword"
-                matInput
-                [formControl]="signupForm.controls['confirmPassword']"
-                placeholder="Confirm Password"
-                value="">
-            </mat-form-field>
-            <small *ngIf="signupForm.controls['confirmPassword'].hasError('required') && signupForm.controls['confirmPassword'].touched" class="form-error-msg">Confirm password is required.</small>
-            <small *ngIf="signupForm.controls['confirmPassword'].hasError('equalTo')" class="form-error-msg">Passwords do not math.</small>
-          </div>
-          
-          <div class="pb-16">
+          <button mat-raised-button class="mat-primary full-width verify--btn mt-16 mb-16" [disabled]="signupForm.invalid">Verify Email</button>
+ 
+          <!-- <div class="pb-16">
             <mat-checkbox
               name="agreed"
               [formControl]="signupForm.controls['agreed']"
@@ -66,12 +72,8 @@
               <small 
                 *ngIf="signupForm.controls['agreed'].hasError('agreed') && signupForm.controls['agreed'].touched" 
                 class="form-error-msg"> You must agree to the terms and conditions </small>
-          </div>
+          </div> --> 
 
-          <button mat-raised-button class="mat-primary full-width mb-16" [disabled]="signupForm.invalid">Sign up</button>
-          <div class="text-center">
-            <a [routerLink]="'/sessions/signin'" class="text-center full-width">Sign in to existing account</a>
-          </div>
         </form>
       </mat-card-content>
     </mat-card>
