@@ -61,7 +61,7 @@
               class="form-error-msg"> Invaild email address </small>
           </div>
 
-          <button mat-raised-button class="mat-primary full-width verify--btn mt-16 mb-16" [disabled]="signupForm.invalid">Verify Email</button>
+          <button mat-raised-button class="mat-primary full-width verify--btn mt-16 mb-10" [disabled]="signupForm.invalid" *ngIf="verifyEmailBtn">Verify Email</button>
  
           <!-- <div class="pb-16">
             <mat-checkbox
@@ -75,6 +75,81 @@
           </div> --> 
 
         </form>
+
+        <!-- Step 2 -->
+
+        <form class="otp--section" [formGroup]="otpForm" (ngSubmit)="otpSubmit()" *ngIf="otpFormSec">
+          <div class="otp--header text-center"> 
+            <p>We have sent you an OTP to the email address. 
+              Please enter the OTP below to verify you Email address</p>
+          </div>
+          <div class="enter--otp" fxLayout="row" fxLayoutAlign="center center">
+            <div class="mr-1">
+              <mat-form-field>
+                <input type="text" name="" matInput  value="-">
+              </mat-form-field> 
+            </div>
+            <div class="mr-1">
+              <mat-form-field>
+                <input type="text" name="" matInput  value="-">
+              </mat-form-field> 
+            </div>
+            <div class="mr-1">
+              <mat-form-field>
+                <input type="text" name="" matInput  value="-">
+              </mat-form-field> 
+            </div>
+            <div class="mr-1">
+              <mat-form-field>
+                <input type="text" name="" matInput value="-">
+              </mat-form-field> 
+            </div>
+            <div class="mr-1">
+              <mat-form-field>
+                <input type="text" name="" matInput value="-">
+              </mat-form-field> 
+            </div>
+            <div>
+              <mat-form-field>
+                <input type="text" name="" matInput value="-">
+              </mat-form-field> 
+            </div>
+          </div>
+          <a class="text-center" fxLayout="row" fxLayoutAlign="center center" class="resend--otp--sec">Resend OTP</a>
+
+          <button mat-raised-button class="mat-primary full-width mt-16 mb-10">Next</button>
+
+        </form>
+
+         <!-- Step 3 -->
+
+         <form class="set--password--section" [formGroup]="setPasswordForm" (ngSubmit)="setPasswordSubmit()" *ngIf="setPasswordSec">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <h1>Set Password</h1>
+          </div>  
+         
+          <div class="">
+            <mat-form-field class="full-width">
+              <input type="text" name="choosePassword" matInput [formControl]="setPasswordForm.controls['choosePassword']"
+                placeholder="Choose Password" value="">
+            </mat-form-field>
+            <small
+              *ngIf="setPasswordForm.controls['choosePassword'].hasError('required') && setPasswordForm.controls['choosePassword'].touched"
+              class="form-error-msg"> Password is required </small>
+          </div>
+          <div class="">
+            <mat-form-field class="full-width">
+              <input type="text" name="confirmPassword" matInput [formControl]="setPasswordForm.controls['confirmPassword']"
+                placeholder="Confirm Password" value="">
+            </mat-form-field>
+            <small
+              *ngIf="setPasswordForm.controls['confirmPassword'].hasError('required') && setPasswordForm.controls['confirmPassword'].touched"
+              class="form-error-msg"> Confirm Password is required </small>
+          </div>
+          <button mat-raised-button class="mat-primary full-width mt-16 mb-10">Set-up Acount</button>
+         </form>
+
+
       </mat-card-content>
     </mat-card>
   </div>

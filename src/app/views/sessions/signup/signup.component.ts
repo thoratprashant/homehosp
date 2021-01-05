@@ -13,7 +13,14 @@ export class SignupComponent implements OnInit {
   @ViewChild(MatProgressBar) progressBar: MatProgressBar;
   @ViewChild(MatButton) submitButton: MatButton;
 
+  verifyEmailBtn = true;
+  otpFormSec = false;
+  setPasswordSec = false;
+
   signupForm: FormGroup
+  otpForm: FormGroup
+  setPasswordForm: FormGroup
+
   constructor() {}
 
   ngOnInit() { 
@@ -22,8 +29,14 @@ export class SignupComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.email]),   
       firstName: new FormControl("", Validators.required),
       lastName: new FormControl("", Validators.required),
-      contactNumber: new FormControl("", Validators.required)
-      
+      contactNumber: new FormControl("", Validators.required)      
+    });
+
+    this.otpForm = new FormGroup({    
+    });
+    this.setPasswordForm = new FormGroup({    
+      choosePassword: new FormControl("", Validators.required),
+      confirmPassword: new FormControl("", Validators.required),
     })
   }
 
@@ -31,8 +44,20 @@ export class SignupComponent implements OnInit {
     const signupData = this.signupForm.value;
     console.log(signupData);
 
-    this.submitButton.disabled = true;
-    this.progressBar.mode = 'indeterminate';
+    // this.submitButton.disabled = true;
+    // this.progressBar.mode = 'indeterminate';
+
+    this.verifyEmailBtn = false;
+    this.otpFormSec = true;
+  }
+
+  otpSubmit(){ 
+    this.otpFormSec = false;
+    this.setPasswordSec = true;
+  }
+
+  setPasswordSubmit(){
+
   }
 
 }
