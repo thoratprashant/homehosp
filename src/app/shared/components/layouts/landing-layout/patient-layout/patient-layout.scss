@@ -8,8 +8,15 @@
         min-height: unset;
     }
 }
+@media only screen and (max-width: 599px) {
+    .main-content-wrap{
+        margin-top: 54px;
+        height: auto;
+    }
+}
 @media only screen and (max-width: 959px) {
     .app-admin-container .rightside-content-hold {
         height: calc(100vh - 62px);
     }
+    
 }

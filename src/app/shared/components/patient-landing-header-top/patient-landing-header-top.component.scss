@@ -23,14 +23,17 @@
 
 @media only screen and (max-width: 599px) {
     .mm--header{
+        padding: 7px 0;
         .topnav{
             justify-content: space-between;
             &::after{
                 content: none;
             }
             .topbar-branding {
+                height: auto;
                 img{
-                    margin-left: 15px;
+                    margin-left: 15px; 
+                    width: 60%;
                 }
             }
         }
