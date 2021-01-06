@@ -7,6 +7,7 @@ import { SigninComponent } from "./signin/signin.component";
 import { SignupComponent } from "./signup/signup.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { ErrorComponent } from "./error/error.component"; 
+import { ResetPasswordComponent } from "./reset-password/reset-password.component";
 
 export const SessionsRoutes: Routes = [
   {
@@ -26,6 +27,11 @@ export const SessionsRoutes: Routes = [
         path: "forgot-password",
         component: ForgotPasswordComponent,
         data: { title: "Forgot password" }
+      },
+      {
+        path: "reset-password",
+        component: ResetPasswordComponent,
+        data: { title: "Reset password" }
       },
       {
         path: "lockscreen",

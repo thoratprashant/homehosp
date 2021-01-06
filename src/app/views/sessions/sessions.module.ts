@@ -15,7 +15,8 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { SessionsRoutes } from "./sessions.routing";
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ErrorComponent } from './error/error.component'; 
+import { ErrorComponent } from './error/error.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component'; 
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { ErrorComponent } from './error/error.component';
     SigninComponent, 
     SignupComponent, 
     NotFoundComponent, 
-    ErrorComponent]
+    ErrorComponent, 
+    ResetPasswordComponent]
 })
 export class SessionsModule { }
