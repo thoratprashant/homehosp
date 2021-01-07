@@ -16,7 +16,8 @@ import { SignupComponent } from './signup/signup.component';
 import { SessionsRoutes } from "./sessions.routing";
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component'; 
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { AuthHeaderComponent } from './auth-header/auth-header.component'; 
 
 @NgModule({
   imports: [
@@ -36,6 +37,6 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     SignupComponent, 
     NotFoundComponent, 
     ErrorComponent, 
-    ResetPasswordComponent]
+    ResetPasswordComponent, AuthHeaderComponent]
 })
 export class SessionsModule { }

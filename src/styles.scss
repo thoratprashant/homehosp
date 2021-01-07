@@ -42,3 +42,27 @@
         margin-left: 18px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media only screen and (max-width: 599px) {
+    .auth--header{
+        padding: 10px 15px;
+        p{
+            display: none;
+        }
+    } 
+}

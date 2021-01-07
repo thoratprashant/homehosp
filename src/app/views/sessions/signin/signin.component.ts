@@ -11,7 +11,7 @@ import { JwtAuthService } from '../../../shared/services/auth/jwt-auth.service';
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.css']
+  styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild(MatProgressBar) progressBar: MatProgressBar;
@@ -34,7 +34,7 @@ export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     this.signinForm = new FormGroup({
-      username: new FormControl('Watson', Validators.required),
+      username: new FormControl('watson@gmail.com', Validators.required),
       password: new FormControl('12345678', Validators.required),
       rememberMe: new FormControl(true)
     });
