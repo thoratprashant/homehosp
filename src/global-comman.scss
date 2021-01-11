@@ -19,4 +19,21 @@ ul{list-style-type: none;}
 }
 .egret-navy .mat-raised-button:not([class*='mat-elevation-z']){
     box-shadow: none !important;
+    line-height: 38px;
+}
+
+// Checkbox
+.mat-checkbox{
+    .mat-checkbox-layout{
+        white-space: normal;
+        align-items: flex-start;
+        .mat-checkbox-inner-container{
+            margin: 4px 12px 0 0 !important;
+        }
+        .mat-checkbox-label{
+            line-height: 21px;
+            font-size: 14px;
+            color: #304156;
+        }
+    }
 }

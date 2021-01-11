@@ -8,6 +8,8 @@ import { SignupComponent } from "./signup/signup.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { ErrorComponent } from "./error/error.component"; 
 import { ResetPasswordComponent } from "./reset-password/reset-password.component";
+import { PatientConsentComponent } from "./consent-form/patient-consent/patient-consent.component";
+import { ConsentSignedComponent } from "./consent-form/consent-signed/consent-signed.component";
 
 export const SessionsRoutes: Routes = [
   {
@@ -47,6 +49,16 @@ export const SessionsRoutes: Routes = [
         path: "error",
         component: ErrorComponent,
         data: { title: "Error" }
+      },
+      {
+        path: "patient-consent",
+        component: PatientConsentComponent,
+        data: { title: "Patient Consent" }
+      },
+      {
+        path: "consent-form-signed",
+        component: ConsentSignedComponent,
+        data: { title: "Consent Form Signed" }
       }
     ]
   }

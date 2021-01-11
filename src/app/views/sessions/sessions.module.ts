@@ -17,7 +17,9 @@ import { SessionsRoutes } from "./sessions.routing";
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { AuthHeaderComponent } from './auth-header/auth-header.component'; 
+import { AuthHeaderComponent } from './auth-header/auth-header.component';
+import { PatientConsentComponent } from './consent-form/patient-consent/patient-consent.component';
+import { ConsentSignedComponent } from './consent-form/consent-signed/consent-signed.component'; 
 
 @NgModule({
   imports: [
@@ -37,6 +39,7 @@ import { AuthHeaderComponent } from './auth-header/auth-header.component';
     SignupComponent, 
     NotFoundComponent, 
     ErrorComponent, 
-    ResetPasswordComponent, AuthHeaderComponent]
+    ResetPasswordComponent, AuthHeaderComponent, 
+    PatientConsentComponent, ConsentSignedComponent]
 })
 export class SessionsModule { }
