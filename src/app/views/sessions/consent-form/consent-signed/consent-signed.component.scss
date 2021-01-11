@@ -38,6 +38,26 @@
                     display: block;
                 }
             }
+            &.one{
+                font-family: 'Pinyon Script', cursive;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            &.two{
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 19px; 
+                color: #314156;
+            }
+            &.three{
+                font-family: 'Shadows Into Light Two', cursive;
+                font-size: 19px; 
+                color: #314156;
+            }
+            &.four{
+                font-family: 'Jim Nightshade', cursive;
+                font-size: 23px; 
+                color: #314156;
+            }
         }
     }
 }

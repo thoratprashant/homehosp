@@ -9,22 +9,22 @@
                 To ensure this, we’re asking you to accept our terms of service and make a commitment to respect everyone on HomeHosp.</p>
         </div>
         <div fxLayout="row wrap" fxLayoutGap.xs="0" fxLayoutGap.sm="0" fxLayoutGap="25px" fxLayoutAlign="center center" class="text-center">
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="35">
-                <div class="box--wrap">
+            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="40" fxFlex.xl="35">
+                <div class="box--wrap selected">
                     <h1>
                         Please read and e-sign the document
                     </h1>
                     <p>Consent to Treatment</p>
-                    <button mat-raised-button class="mat-primary">Read & Sign</button>
+                    <button mat-raised-button class="mat-primary" [routerLink]="'/sessions/consent-form-signed'">Read & Sign</button>
                 </div>
             </div>
-            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="35">
+            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="40" fxFlex.xl="35">
                 <div class="box--wrap">
                     <h1>
                         Please fill up the mini survey
                     </h1>
                     <p>Your profile will be customized as per the information submited.</p>
-                    <button mat-raised-button class="mat-primary">Take Survey</button>
+                    <button mat-raised-button class="mat-primary" [routerLink]="'/sessions/consent-form-signed'">Take Survey</button>
                 </div>
             </div>
         </div>
