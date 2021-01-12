@@ -10,6 +10,7 @@ import { ErrorComponent } from "./error/error.component";
 import { ResetPasswordComponent } from "./reset-password/reset-password.component";
 import { PatientConsentComponent } from "./consent-form/patient-consent/patient-consent.component";
 import { ConsentSignedComponent } from "./consent-form/consent-signed/consent-signed.component";
+import { MiniSurveyComponent } from "./mini-survey/mini-survey.component";
 
 export const SessionsRoutes: Routes = [
   {
@@ -59,6 +60,11 @@ export const SessionsRoutes: Routes = [
         path: "consent-form-signed",
         component: ConsentSignedComponent,
         data: { title: "Consent Form Signed" }
+      },
+      {
+        path: "mini-survey",
+        component: MiniSurveyComponent,
+        data: { title: "Mini Survey " }
       }
     ]
   }

@@ -11,6 +11,11 @@ button{
     border-color: #1fa4dd !important;
     border-radius: 2px;
 }
+.mat-raised-button.mat-secondary{
+    color: #fff !important;
+    background: #8f98a4 !important;
+    border-radius: 2px;
+}
 ul{list-style-type: none;}
 
 .form-error-msg{
@@ -28,7 +33,7 @@ ul{list-style-type: none;}
         white-space: normal;
         align-items: flex-start;
         .mat-checkbox-inner-container{
-            margin: 4px 12px 0 0 !important;
+            margin: 2px 12px 0 0 !important;
         }
         .mat-checkbox-label{
             line-height: 21px;
@@ -36,4 +41,13 @@ ul{list-style-type: none;}
             color: #304156;
         }
     }
+}
+.mat-radio-label{
+    color: #3b4b5f;
+    font-size: 14px;
+    white-space: normal !important;
+}
+.mat-form-field{
+    letter-spacing: normal;
+    font-family: 'Roboto';
 }

@@ -19,7 +19,11 @@ import { ErrorComponent } from './error/error.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { AuthHeaderComponent } from './auth-header/auth-header.component';
 import { PatientConsentComponent } from './consent-form/patient-consent/patient-consent.component';
-import { ConsentSignedComponent } from './consent-form/consent-signed/consent-signed.component'; 
+import { ConsentSignedComponent } from './consent-form/consent-signed/consent-signed.component';
+import { MiniSurveyComponent } from './mini-survey/mini-survey.component'; 
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   imports: [
@@ -30,6 +34,9 @@ import { ConsentSignedComponent } from './consent-form/consent-signed/consent-si
     SharedMaterialModule,
     FlexLayoutModule,
     PerfectScrollbarModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatRadioModule,
     RouterModule.forChild(SessionsRoutes)
   ],
   declarations: [
@@ -40,6 +47,6 @@ import { ConsentSignedComponent } from './consent-form/consent-signed/consent-si
     NotFoundComponent, 
     ErrorComponent, 
     ResetPasswordComponent, AuthHeaderComponent, 
-    PatientConsentComponent, ConsentSignedComponent]
+    PatientConsentComponent, ConsentSignedComponent, MiniSurveyComponent]
 })
 export class SessionsModule { }

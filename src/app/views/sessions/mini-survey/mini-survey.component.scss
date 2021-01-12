@@ -1,0 +1,66 @@
+.mat-stepper-vertical {
+    margin-top: 8px;
+    width: 100%;
+    .form--outer--wrapper{
+        box-shadow: -1.5px 1.4px 13px 0 rgba(88, 92, 101, 0.3);
+        margin-top: 10px;
+        .form--inner--wrapper{
+            padding: 20px;
+        }
+        .form--footer{
+            padding: 0 20px 20px 20px;
+        }
+    }
+    .medical--history--wrapper{
+        margin-top: 30px;
+        .history--box{
+            padding: 0 25px 5px 25px;
+            box-shadow: -1.5px 1.4px 13px 0 rgba(88, 92, 101, 0.3); 
+            margin-bottom: 40px;
+            .header{
+                font-family: Roboto;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 4px 18px;
+                color: #fff;
+                background-color: #1fa4dd;
+                width: auto;
+                margin-top: -13px;
+                margin-bottom: 25px;
+                border-radius: 3px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                color: #3b4b5f;
+            }
+            .add--btn{
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 0;
+                font-size: 12px;
+                height: 21px;
+                width: 36px;
+                line-height: unset;
+                min-width: unset;            
+            }
+            .add--more--btn{
+                font-size: 12px;
+                height: 21px;
+                width: 64px;
+                line-height: unset;
+                min-width: unset;
+                margin-top: -5px;                
+                padding: 0;
+            }
+        }
+    }
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+
+
+  

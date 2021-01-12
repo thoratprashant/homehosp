@@ -1,0 +1,370 @@
+<div fxLayout="column">
+    <app-auth-header></app-auth-header>
+    <div fxLayout="row" fxFlex="100" fxLayoutAlign="center center">
+        <div fxLayout="column" fxFlex.xs="95" fxFlex.sm="93" fxFlex.md="75" fxFlex.lg="62" fxFlex.xl="44"
+            class="consent--signed--wrapper mb-16" fxLayoutAlign="center center">
+            <mat-vertical-stepper #stepper>
+                <!-- Step 1 -->
+                <mat-step [stepControl]="firstFormGroup">
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Personal Information</ng-template>
+                        <div class="form--outer--wrapper">
+                            <div class="form--inner--wrapper">
+                                <mat-form-field class="mt-0">
+                                    <mat-label>Mr. </mat-label>
+                                    <mat-select>
+                                        <mat-option> MRS </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>First Name</mat-label>
+                                    <input matInput placeholder="First name" formControlName="firstCtrl">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Last Name</mat-label>
+                                    <input matInput placeholder="Last name">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Choose a date</mat-label>
+                                    <input matInput [matDatepicker]="picker" (focus)="picker.open()">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                                <div class="mt-5 mb-5" fxLayout="row" fxLayoutAlign="start center">
+                                    <Label class="mr-16">Gender*</Label>
+                                    <mat-radio-group name="gender">
+                                        <mat-radio-button value="male" class="mr-20">Male</mat-radio-button>
+                                        <mat-radio-button value="female">Female</mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+                                    <div fxFlex.xs="20" fxFlex.sm="10" fxFlex.md="10" fxFlex.lg="10" fxFlex.xl="10">
+                                        <mat-form-field class="full-width mt-0">
+                                            <mat-label>+91</mat-label>
+                                            <mat-select>
+                                                <mat-option> +92 </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div fxFlex.xs="70" fxFlex.sm="90" fxFlex.md="90" fxFlex.lg="90" fxFlex.xl="90">
+                                        <mat-form-field class="full-width mt-0">
+                                            <mat-label>Primary phone number</mat-label>
+                                            <input matInput placeholder="Primary phone number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Select City * </mat-label>
+                                    <mat-select>
+                                        <mat-option> Pune </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Select State * </mat-label>
+                                    <mat-select>
+                                        <mat-option> Maharashtra </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Zipcode * </mat-label>
+                                    <mat-select>
+                                        <mat-option> 415109 </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Select Preferred Language * </mat-label>
+                                    <mat-select>
+                                        <mat-option> Marathi </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="form--footer">
+                                <button mat-raised-button matStepperNext class="mat-secondary mr-10"
+                                    (click)="stepper.reset()">Reset</button>
+                                <button mat-raised-button matStepperNext class="mat-primary">Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </mat-step>
+
+                <!-- Step 2 -->
+                <mat-step [stepControl]="secondFormGroup">
+                    <form [formGroup]="secondFormGroup">
+                        <ng-template matStepLabel>Medical History</ng-template>
+                        <div class="medical--history--wrapper">
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    Medical History
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you have any medical history?</p>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px" fxFlex="100" fxLayout.xs="row wrap"
+                                    fxLayoutAlign="start center" class="full-width">
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="male">Yes, I have medical history
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="female">No, I don't have any medical history
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width relative">
+                                    <mat-label>Medical Condition</mat-label>
+                                    <input matInput placeholder="Medical Condition">
+                                    <button mat-raised-button class="mat-primary add--btn">Add</button>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    INFREQUENT PROBLEMS
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you have any frequent problems?</p>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px" fxFlex="100" fxLayout.xs="row wrap"
+                                    fxLayoutAlign="start center" class="full-width">
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="male">Yes, I have some frequent problems
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="female">No, I don't have have any frequent problems
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width relative">
+                                    <mat-label>Please enter some details</mat-label>
+                                    <input matInput placeholder="Please enter some details">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    RECENT MEDICATION
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you want to share your previous medication records with doctors?</p>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px" fxFlex="100" fxLayout.xs="row wrap"
+                                    fxLayoutAlign="start center" class="full-width">
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="male">Yes, doctors can check my medication
+                                            records
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                                        <mat-radio-button value="female">No, I don't want to share my
+                                            medication records
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <p class="mb-0 mt-16">* Sharing the previous medication records with doctors help them
+                                    in analyzing your case
+                                    more effectively and suggest suitable diagnosis for your complaints.</p>
+                                <mat-form-field class="full-width relative">
+                                    <mat-label>Please enter some details</mat-label>
+                                    <input matInput placeholder="Please enter some details">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    ALLERGIES
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p class="mb-0">If you have any allergies, please specify.</p>
+                                    <p class="fnt--12">The doctor will verify the allergies at the time of appointment.
+                                    </p>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Drug Name</mat-label>
+                                    <input matInput placeholder="Enter Drug Name">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Type of Reaction</mat-label>
+                                    <input matInput placeholder="Type of Reaction">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Date of Reaction</mat-label>
+                                    <input matInput [matDatepicker]="picker1" (focus)="picker1.open()">
+                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                </mat-form-field>
+                                <div fxLayout="row" fxLayoutAlign="end center" class="full-width">
+                                    <button mat-raised-button class="mat-primary add--more--btn mb-10">Add More</button>
+                                </div>
+                            </div>
+
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    TRAVELS
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Have you traveled outside of the country in the last 12 months?</p>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="20px" fxFlex="100" fxLayoutAlign="start center"
+                                    class="full-width">
+                                    <div fxFlex.xs="20" fxFlex.sm="20" fxFlex.md="20" fxFlex.lg="20" fxFlex.xl="20">
+                                        <mat-radio-button value="male">Yes
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="80" fxFlex.sm="80" fxFlex.md="80" fxFlex.lg="80" fxFlex.xl="80">
+                                        <mat-radio-button value="female">No
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Location</mat-label>
+                                    <input matInput placeholder="Enter Location">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Duration of stay</mat-label>
+                                    <input matInput placeholder="Duration of stay">
+                                </mat-form-field>
+                                <div fxLayout="row" fxLayoutAlign="end center" class="full-width">
+                                    <button mat-raised-button class="mat-primary add--more--btn mb-10">Add More</button>
+                                </div>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    TOBACCO
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you consume tobacco or smoke cigarette?</p>
+                                </div>
+                                <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" fxFlex="100"
+                                    fxLayoutAlign="start center" class="full-width mb-10">
+                                    <div fxFlex.xs="100" fxFlex.sm="20" fxFlex.md="20" fxFlex.lg="20" fxFlex.xl="20">
+                                        <mat-radio-button value="male">Yes
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="80" fxFlex.md="80" fxFlex.lg="80" fxFlex.xl="80">
+                                        <mat-radio-button value="female">No, I never smoke or consume tobacco
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>How many times cigarettes and/or tobacco smoked and/or chewed per day?
+                                    </mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Years of smoking cigarettes and/or chewing tobacco</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    ALCOHOL
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you consume alcohol?</p>
+                                </div>
+                                <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" fxFlex="100"
+                                    fxLayoutAlign="start center" class="full-width mb-10">
+                                    <div fxFlex.xs="100" fxFlex.sm="20" fxFlex.md="20" fxFlex.lg="20" fxFlex.xl="20">
+                                        <mat-radio-button value="male">Yes
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="80" fxFlex.md="80" fxFlex.lg="80" fxFlex.xl="80">
+                                        <mat-radio-button value="female">No, I never consume alcohol
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Specify the frequency</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Number of drinks per week</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    DRUG
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Do you use any illicit drug?</p>
+                                </div>
+                                <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" fxFlex="100"
+                                    fxLayoutAlign="start center" class="full-width mb-10">
+                                    <div fxFlex.xs="100" fxFlex.sm="20" fxFlex.md="20" fxFlex.lg="20" fxFlex.xl="20">
+                                        <mat-radio-button value="male">Yes
+                                        </mat-radio-button>
+                                    </div>
+                                    <div fxFlex.xs="100" fxFlex.sm="80" fxFlex.md="80" fxFlex.lg="80" fxFlex.xl="80">
+                                        <mat-radio-button value="female">No, I never use any illicit drug
+                                        </mat-radio-button>
+                                    </div>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Drug Name</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Usage Frequency</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="history--box" fxLayout="column" fxLayoutAlign="center start">
+                                <div class="header">
+                                    OCCUPATION
+                                </div>
+                                <div fxFlex="100" fxLayout="column">
+                                    <p>Please specify about your occupation and work type</p>
+                                </div>
+                                <mat-form-field class="full-width mt-0">
+                                    <mat-label>Occupation details</mat-label>
+                                    <input matInput placeholder="Enter info">
+                                </mat-form-field>
+                            </div>
+
+
+                        </div>
+                    </form>
+                    <div class="form--footer mt-16">
+                        <button mat-raised-button matStepperPrevious class="mat-secondary mr-10">Previous</button>
+                        <button mat-raised-button matStepperNext class="mat-primary">Next</button>
+                    </div>
+                </mat-step>
+
+                <!-- Step 3 -->
+                <mat-step>
+                    <ng-template matStepLabel>Services</ng-template>
+                    <div class="form--outer--wrapper">
+                        <div class="form--inner--wrapper">
+                            <mat-form-field class="full-width mt-0">
+                                <mat-label>Select Specialists</mat-label>
+                                <mat-select>
+                                    <mat-option> 01 </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field class="full-width mt-0 mb-5">
+                                <mat-label>Select Vendors </mat-label>
+                                <mat-select>
+                                    <mat-option> 02 </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-checkbox name="SS" class="mt-16">
+                                I would like to see all the new latest products and adds of selected vendors.
+                            </mat-checkbox>
+                        </div>
+                        <div class="form--footer mt-16">
+                            <button mat-raised-button matStepperPrevious class="mat-secondary mr-10">Previous</button>
+                            <button mat-raised-button class="mat-primary">Finish</button>
+                        </div>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+    </div>
+</div>
