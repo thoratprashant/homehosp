@@ -30,17 +30,28 @@ interface IBadge {
 export class NavigationService {
   iconMenu: IMenuItem[] = [
     {
-      name: "Blank",
+      name: "For Providers",
       type: "link",
       svgIcon: "ulb_server",
-      state: "others/blank",
+      state: "/xyz",
     },
     {
-      name: "DOC",
-      type: "extLink",
-      tooltip: "Documentation",
+      name: "For Vendors",
+      type: "link", 
       icon: "library_books",
-      state: "http://demos.ui-lib.com/egret-doc/",
+      state: "/abc",
+    },
+    {
+      name: "Login",
+      type: "link", 
+      icon: "login",
+      state: "/sessions/signin",
+    },
+    {
+      name: "Sign Up for Free",
+      type: "link", 
+      icon: "post_add",
+      state: "/sessions/signup",
     },
   ];
 

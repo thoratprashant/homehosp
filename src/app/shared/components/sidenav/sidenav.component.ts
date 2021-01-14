@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-sidenav',
+  selector: 'app-sidenav', 
   templateUrl: './sidenav.template.html'
 })
 export class SidenavComponent {

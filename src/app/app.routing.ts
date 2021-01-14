@@ -24,12 +24,7 @@ export const rootRouterConfig: Routes = [
     redirectTo: "others/blank",
     pathMatch: "full",
   },
-  {
-    path: "home",
-    loadChildren: () =>
-      import("./views/home/home.module").then((m) => m.HomeModule),
-    data: { title: "Choose A Demo" },
-  },
+   
   {
     path: "",
     component: AuthLayoutComponent,
