@@ -14,10 +14,109 @@
     .mt--100{
         margin-top: 100px;
     }
+    .pb--100{
+        padding-bottom: 100px;
+    }
+    .pt--100{
+        padding-top: 100px;
+    }
+    .bg--fff{
+        background-color: #fff;
+    }
     .section--one{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 400px; 
+        height: 94vh; 
     }
+    .section--two{
+        .providers--box{
+            .info--sec{
+                background-color: #1fa4dd;
+                padding: 50px;
+                width: 51%;
+                margin-right: -100px;
+                flex-shrink: 0;
+                z-index: 11;
+                border-radius: 3px;
+                h2{
+                    font-size: 31px;
+                    font-weight: 500;
+                    color: #fff;
+                    margin-bottom: 25px;
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+            .img--sec{
+                height: 445px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; 
+                width: 606px;
+            }
+        }
+    }
+
+    .section--three{
+        .img--data{
+            h1{
+                font-size: 42px;
+                color: #231f20;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 22px;
+                color: #666;
+            }
+        }
+    } 
+    .section--four{
+        .meet--doctors{
+            width: 100%;
+            .profile--pic{
+                width: 225px;
+                height: 225px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+            .doc--name{
+                font-size: 22px;
+                font-weight: 500;
+                color: #231f20;
+                margin: 35px 0 20px 0;
+            }
+            address{
+                font-style: normal;
+                text-transform: uppercase;
+                h5{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #1fa4dd; 
+                    margin: 0 0 4px 0;
+                }
+                p{
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 1.43;
+                    margin: 0;
+                }
+            }
+            .divider{
+                border-top: 2px solid #1fa4dd;
+                width: 34px;
+                margin: 20px auto 16px auto;                
+            }
+            .about--doc{
+                color: #231f20;
+                font-family: Roboto;
+                font-size: 16px;
+            }
+        }
+    }
+    
 }

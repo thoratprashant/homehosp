@@ -11,7 +11,7 @@ export const rootRouterConfig: Routes = [
     component: PatientLayoutComponent, 
     children: [
       {
-        path: "landing",
+        path: "patient-landing",
         loadChildren: () =>
           import("./views/landing/landing.module").then((m) => m.LandingModule), 
       },
@@ -23,7 +23,7 @@ export const rootRouterConfig: Routes = [
     component: PatientLayoutComponent, 
     children: [
       {
-        path: "provider",
+        path: "provider-landing",
         loadChildren: () =>
           import("./views/provider-landing/provider-landing.module").then((m) => m.ProviderLandingModule), 
       },

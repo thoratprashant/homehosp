@@ -8,10 +8,10 @@
 
       <ul class="menu ml-auto" *ngIf="!layoutConf.isMobile">
         <li>
-          <a>For Providers</a>
+          <a [routerLink]="'/provider-landing'">For Providers</a>
         </li> 
         <li>
-          <a>For Vendors</a>
+          <a [routerLink]="'/patient-landing'">For Vendors</a>
         </li> 
         <li>
           <a class="pr-0" [routerLink]="'/sessions/signin'">
