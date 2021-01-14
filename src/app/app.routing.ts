@@ -18,6 +18,18 @@ export const rootRouterConfig: Routes = [
     ],
   },
 
+  {
+    path: "",
+    component: PatientLayoutComponent, 
+    children: [
+      {
+        path: "provider",
+        loadChildren: () =>
+          import("./views/provider-landing/provider-landing.module").then((m) => m.ProviderLandingModule), 
+      },
+    ],
+  },
+
   
   {
     path: "",

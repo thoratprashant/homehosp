@@ -1,0 +1,55 @@
+.patient--landing--footer{
+    background-color: #231f20;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .container{
+        max-width: 1137px;
+    }
+    ul{
+        li{
+            a{
+                font-size: 16px;
+                line-height: 1.63;
+                font-size: 16px;
+                color: #fff;
+                margin-right: 98px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .patient--landing--footer{ 
+        padding-top: 10px;
+        padding-bottom: 10px; 
+        ul{
+            li{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+                a{
+                    font-size: 12px; 
+                    margin-right: 0;                    
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .patient--landing--footer{ 
+        padding-top: 15px;
+        padding-bottom: 15px; 
+        ul{
+            li{               
+                a{
+                    font-size: 14px; 
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}

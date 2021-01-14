@@ -5,7 +5,7 @@ export const LandingRoutes: Routes = [
   {
     path: '',
     children: [{
-      path: 'patient',
+      path: '',
       component: PatientLandingComponent, 
     }]
   }

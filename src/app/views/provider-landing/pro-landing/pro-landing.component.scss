@@ -1,0 +1,23 @@
+.provider--landing--wrapper{
+    .container{
+        max-width: 1137px;
+    }
+    .main--heading{
+        font-size: 42px;
+        font-weight: 500;
+        color: #231f20;
+        text-transform: uppercase;
+    }
+    .mb--100{
+        margin-bottom: 100px;
+    }
+    .mt--100{
+        margin-top: 100px;
+    }
+    .section--one{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px; 
+    }
+}
