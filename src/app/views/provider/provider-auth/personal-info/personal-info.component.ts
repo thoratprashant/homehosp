@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-personal-info',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalInfoComponent implements OnInit {
 
-  personalInfoForm
+  personalInfoForm: FormGroup
+
   constructor() { }
 
   ngOnInit(): void {
+    this.personalInfoForm = new FormGroup({
+    })
   }
 
 }

@@ -1,0 +1,47 @@
+<div class="page-wrap auth--wrapper">
+    <div class="session-form-hold">
+        <mat-card>
+            <mat-card-content>
+                <form [formGroup]="professionalInformationForm">
+                    <div class="header--sec">
+                        <h2 class="m-0">Professional Information</h2>
+                    </div>
+                    <mat-form-field class="full-width">
+                        <mat-label>Credentials</mat-label>
+                        <input matInput placeholder="" value="MD">
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Hospitals *</mat-label>
+                        <input matInput placeholder="Hospitals *">
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Speciality *</mat-label>
+                        <input matInput placeholder="Speciality *">
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Sub - Speciality *</mat-label>
+                        <input matInput placeholder="Sub - Speciality *">
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Sub - Speciality *</mat-label>
+                        <input matInput placeholder="Sub - Speciality *">
+                    </mat-form-field>
+
+                    <div class="pb-16 mt-10">
+                        <mat-checkbox class="pb-16" checked>I hereby declare that the details mentioned above are 
+                            correct to the best of my knowledge and belief.</mat-checkbox>
+                    </div>
+
+
+
+                    <div fxLayout="row" fxLayoutAlign="center center" class="mt-10">
+                        <button mat-raised-button class="mat-secondary mr-10"
+                            [routerLink]="'/provider-auth/credentials'">Back</button>
+                        <button mat-raised-button class="mat-primary"
+                            [routerLink]="'/provider-auth/credentials'">Submit</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

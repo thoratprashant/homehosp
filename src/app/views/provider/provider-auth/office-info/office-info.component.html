@@ -3,25 +3,18 @@
     <div class="session-form-hold">
         <mat-card>
             <mat-card-content>
-                <form [formGroup]="personalInfoForm">
+                <form [formGroup]="officeInfoForm">
                     <div class="header--sec">
-                        <h2 class="m-0">Personal Information</h2> 
+                        <h2 class="m-0">Office Location</h2> 
                     </div>
                     <mat-form-field class="full-width">
-                        <mat-label>First Name</mat-label>
-                        <input matInput placeholder="First Name"  value="Steave">
+                        <mat-label>Contact Number</mat-label>
+                        <input matInput placeholder="Contact Number">
                     </mat-form-field>
                     <mat-form-field class="full-width">
-                        <mat-label>Last Name</mat-label>
-                        <input matInput placeholder="Last Name"   value="Becknar">
+                        <mat-label>Fax</mat-label>
+                        <input matInput placeholder="Fax">
                     </mat-form-field>
-                    <div class="mt-5 mb-10" fxLayout="row" fxLayoutAlign="start center">
-                        <Label class="mr-16 clr--98a0ab">Gender*</Label>
-                        <mat-radio-group name="gender">
-                            <mat-radio-button value="male" class="mr-20">Female</mat-radio-button>
-                            <mat-radio-button value="female">Male</mat-radio-button>
-                        </mat-radio-group>
-                    </div>
                     <mat-form-field class="full-width">
                         <mat-label>Address Line 1 *</mat-label>
                         <input matInput placeholder="Address Line 1">
@@ -42,7 +35,11 @@
                         <mat-label>Zipcode</mat-label>
                         <input matInput placeholder="Zipcode"  value="93657">
                     </mat-form-field>
-                    <button mat-raised-button class="mat-primary full-width mt-16 mb-10" [disabled]="personalInfoForm.invalid" [routerLink]="'/provider-auth/office-info'">Next</button>
+                    
+                    <div fxLayout="row" fxLayoutAlign="start center" class="mt-10">
+                        <button mat-raised-button class="mat-secondary mr-10" [routerLink]="'/provider-auth/personal-info'">Back</button>
+                        <button mat-raised-button class="mat-primary" [routerLink]="'/provider-auth/credentials'">Next</button>
+                    </div>
                 </form>
             </mat-card-content>
         </mat-card>

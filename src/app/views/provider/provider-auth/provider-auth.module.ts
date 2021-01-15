@@ -29,7 +29,10 @@ import { SelectProviderComponent } from "./select-provider/select-provider.compo
 import { SharedMaterialModule } from 'app/shared/shared-material.module';
 import { ProviderIdentificationNumberComponent } from './provider-identification-number/provider-identification-number.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component'; 
-import { ProviderAuthComponent } from '../provider-auth/provider-auth.component'; 
+import { ProviderAuthComponent } from '../provider-auth/provider-auth.component';
+import { OfficeInfoComponent } from './office-info/office-info.component';
+import { ProviderCredentialsComponent } from './provider-credentials/provider-credentials.component';
+import { ProfessionalInfoComponent } from './professional-info/professional-info.component'; 
 
 @NgModule({
   imports: [     
@@ -71,7 +74,10 @@ import { ProviderAuthComponent } from '../provider-auth/provider-auth.component'
     ProviderAuthHeaderComponent,
     SelectProviderComponent,
     ProviderIdentificationNumberComponent,
-    PersonalInfoComponent, 
+    PersonalInfoComponent,
+    OfficeInfoComponent,
+    ProviderCredentialsComponent,
+    ProfessionalInfoComponent, 
   ]
 })
 export class ProviderAuthModule { }
