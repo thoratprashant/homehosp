@@ -29,6 +29,7 @@ export const rootRouterConfig: Routes = [
       },
     ],
   },
+  
 
   
   {
@@ -51,6 +52,24 @@ export const rootRouterConfig: Routes = [
       },
     ],
   },
+
+  {
+    path: "",
+    component: AuthLayoutComponent,
+    children: [
+      {
+        path: "provider-auth",
+        loadChildren: () =>
+          import("./views/provider/provider-auth/provider-auth.module").then(
+            (m) => m.ProviderAuthModule
+          ),
+        data: { title: "Provider Auth" },
+      },
+    ],
+  },
+
+
+
   {
     path: "",
     component: AdminLayoutComponent,

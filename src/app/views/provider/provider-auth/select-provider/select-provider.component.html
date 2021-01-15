@@ -1,0 +1,32 @@
+<app-provider-auth-header></app-provider-auth-header>
+<div class="page-wrap auth--wrapper">
+    <div class="session-form-hold">
+        <mat-card>
+            <mat-card-content>
+                <form [formGroup]="selectProviderForm">
+                    <div class="header--sec">
+                        <h2>Select Provider</h2>
+                        <p>Please select provider type and subtype</p>
+                    </div>
+
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Provider Type</mat-label>
+                        <mat-select [formControl]="selectProviderForm.controls['providerType']">
+                            <mat-option value="03"> 01 </mat-option>
+                            <mat-option value="04"> 02 </mat-option>
+                        </mat-select>
+                    </mat-form-field>   
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Provider Sub-type</mat-label>
+                        <mat-select [formControl]="selectProviderForm.controls['subtype']">
+                            <mat-option value="03"> 01 </mat-option>
+                            <mat-option value="04"> 02 </mat-option>
+                        </mat-select>
+                    </mat-form-field>  
+
+                    <button mat-raised-button class="mat-primary full-width mt-16 mb-10" [disabled]="selectProviderForm.invalid" [routerLink]="'/provider-auth/pin'">Next</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

@@ -25,6 +25,18 @@
     }
 }
 
+
+
+// Helper classes:
+.mr-20{ margin-right: 20px !important;}
+.mt-5{ margin-top: 5px !important;}
+.mb-5{ margin-bottom: 5px !important;}
+.mb-10{ margin-bottom: 10px !important;}
+.mr-10{ margin-right: 10px !important;}
+
+// Fonts
+.fnt--12{font-size: 12px !important;}
+
 // auth header
 .auth--header{
     background-color: #fff;
@@ -43,16 +55,28 @@
         margin-left: 18px;
     }
 }
-
-// Helper classes:
-.mr-20{ margin-right: 20px !important;}
-.mt-5{ margin-top: 5px !important;}
-.mb-5{ margin-bottom: 5px !important;}
-.mb-10{ margin-bottom: 10px !important;}
-.mr-10{ margin-right: 10px !important;}
-
-// Fonts
-.fnt--12{font-size: 12px !important;}
+//  auth body structure 
+.auth--wrapper{ 
+    height: calc(100vh - 68px);
+    overflow: auto;
+    align-items: flex-start;
+    .header--sec{
+        padding: 15px 15px 30px 15px;
+        text-align: center;
+        h2{
+            color: #304156;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            color: #98a0ab;
+            margin: 0;
+            line-height: 17px;
+        }
+        
+    }
+}
 
 
 
