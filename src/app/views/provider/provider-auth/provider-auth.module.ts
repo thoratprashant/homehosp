@@ -28,6 +28,8 @@ import { ProviderAuthHeaderComponent } from './provider-auth-header/provider-aut
 import { SelectProviderComponent } from "./select-provider/select-provider.component";
 import { SharedMaterialModule } from 'app/shared/shared-material.module';
 import { ProviderIdentificationNumberComponent } from './provider-identification-number/provider-identification-number.component';
+import { PersonalInfoComponent } from './personal-info/personal-info.component'; 
+import { ProviderAuthComponent } from '../provider-auth/provider-auth.component'; 
 
 @NgModule({
   imports: [     
@@ -65,9 +67,11 @@ import { ProviderIdentificationNumberComponent } from './provider-identification
    
   ],
   declarations: [ 
+    ProviderAuthComponent,
     ProviderAuthHeaderComponent,
     SelectProviderComponent,
-    ProviderIdentificationNumberComponent
+    ProviderIdentificationNumberComponent,
+    PersonalInfoComponent, 
   ]
 })
 export class ProviderAuthModule { }

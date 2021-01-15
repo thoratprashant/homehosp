@@ -1,4 +1,4 @@
-<app-provider-auth-header></app-provider-auth-header>
+ 
 <div class="page-wrap auth--wrapper">
     <div class="session-form-hold">
         <mat-card>
@@ -31,7 +31,7 @@
                     </mat-form-field>
 
                     <button mat-raised-button class="mat-primary full-width mt-16 mb-10"
-                        [disabled]="pinForm.invalid">Verify</button>
+                        [disabled]="pinForm.invalid" [routerLink]="'/provider-auth/personal-info'">Verify</button>
 
                     <div fxLayout="row" fxLayoutAlign="center center" *ngIf="caqhNot">
                         <p class="click--here">Do not have CAQH credentials? <a>Click Here</a></p>
