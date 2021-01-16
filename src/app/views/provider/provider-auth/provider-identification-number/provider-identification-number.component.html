@@ -30,8 +30,15 @@
                             (keyup)="caqhNumber($event)">
                     </mat-form-field>
 
+                    <div fxLayout="row" fxLayoutAlign="center center" class="mt-16 mb-10">
+                        <button mat-raised-button class="mat-secondary mr-10"
+                            [routerLink]="'/provider-auth/select-provider'">Back</button>
+                        <button mat-raised-button class="mat-primary"
+                            [disabled]="pinForm.invalid" [routerLink]="'/provider-auth/personal-info'">Verify</button>
+                    </div>
+<!-- 
                     <button mat-raised-button class="mat-primary full-width mt-16 mb-10"
-                        [disabled]="pinForm.invalid" [routerLink]="'/provider-auth/personal-info'">Verify</button>
+                        [disabled]="pinForm.invalid" [routerLink]="'/provider-auth/personal-info'">Verify</button> -->
 
                     <div fxLayout="row" fxLayoutAlign="center center" *ngIf="caqhNot">
                         <p class="click--here">Do not have CAQH credentials? <a>Click Here</a></p>
@@ -48,4 +55,4 @@
             </mat-card-content>
         </mat-card>
     </div>
-</div>
+</div> 

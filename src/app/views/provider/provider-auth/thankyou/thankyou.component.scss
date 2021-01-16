@@ -1,0 +1,30 @@
+.thank--you--wrapper{
+    background-color: #f9f9f9;
+    margin-top: 3px;
+    height: calc(100vh - 72px);
+    h2{
+        font-size: 28px;
+        color: #304156;
+        margin: 25px 0 20px 0;
+        font-weight: normal;
+    }
+    p{
+        font-size: 14px;
+        color: #98a0ab;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .thank--you--wrapper h2 {
+        font-size: 20px; 
+        margin: 20px 0 12px 0; 
+    }
+    .thank--you--wrapper p {
+        font-size: 13px;  
+    }
+    .thank--you--wrapper img{
+        width: 50%;
+    }
+    
+    
+}

@@ -32,7 +32,8 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { ProviderAuthComponent } from '../provider-auth/provider-auth.component';
 import { OfficeInfoComponent } from './office-info/office-info.component';
 import { ProviderCredentialsComponent } from './provider-credentials/provider-credentials.component';
-import { ProfessionalInfoComponent } from './professional-info/professional-info.component'; 
+import { ProfessionalInfoComponent } from './professional-info/professional-info.component';
+import { ThankyouComponent } from './thankyou/thankyou.component'; 
 
 @NgModule({
   imports: [     
@@ -77,7 +78,8 @@ import { ProfessionalInfoComponent } from './professional-info/professional-info
     PersonalInfoComponent,
     OfficeInfoComponent,
     ProviderCredentialsComponent,
-    ProfessionalInfoComponent, 
+    ProfessionalInfoComponent,
+    ThankyouComponent, 
   ]
 })
 export class ProviderAuthModule { }
