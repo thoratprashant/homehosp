@@ -34,12 +34,15 @@
 .mb-5{ margin-bottom: 5px !important;}
 .mb-10{ margin-bottom: 10px !important;}
 .mr-10{ margin-right: 10px !important;}
+.cursor-pointer { cursor: pointer; }
 
 // Fonts
 .fnt--12{font-size: 12px !important;}
 
 // color
 .clr--98a0ab{ color: #98a0ab !important;}
+
+
 
 // auth header
 .auth--header{
@@ -101,4 +104,7 @@
             display: none;
         }
     } 
+    .order-1{
+        order: -1;
+    }
 }

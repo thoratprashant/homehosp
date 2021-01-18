@@ -3,6 +3,14 @@
 
 
         <section fxLayout="row" class="section--one" style="background-image: url('assets/images/ark/pro-banner.png')">
+            <div class="container" fxLayout="column" fxLayoutAlign="center center">
+                <div class="provider--head">
+                    <img src="assets/images/ark/bannerlogo.png" alt="">
+                    <h1>Turn Your Practice into a 
+                        <span> Virtual Clinic</span>
+                    </h1>                     
+                </div>
+            </div>
         </section>
 
         <section class="section--two bg--fff">
@@ -14,7 +22,7 @@
                         </h2>
                     </div>
                 </div>
-                <div fxLayout="row" fxFlex="100" class="providers--box mb--100" fxLayoutAlign="space-between center">
+                <div fxLayout="row" fxLayout.xs="row wrap" fxFlex="100" class="providers--box mb--100" fxLayoutAlign="space-between center">
                     <div class="info--sec">
                         <h2>Get New Patients</h2>
                         <p class="mb-0">Dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -25,9 +33,9 @@
                             been the industry's lorem.
                             dummy</p>
                     </div>
-                    <div class="img--sec" fxLayoutAlign="center center"
+                    <div class="img--sec" fxLayoutAlign.xs="center end" fxLayoutAlign="center center"
                         style="background-image: url('assets/images/ark/video-bg.png')">
-                        <!-- play.png -->
+                        <img src="../../../../assets/images/ark/play.png" alt="" class="cursor-pointer play--btn">
                     </div>
                 </div>
             </div>
@@ -44,7 +52,7 @@
                             the industry's </p>
                     </div>
                     <div fxFlex.xs="100" fxFlex.sm="41" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="order--1">
-                        <img src="assets/images/ark/boost-revenue.png" alt="img">
+                        <img src="assets/images/ark/private-securenew.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -56,7 +64,7 @@
                     <div fxFlex.xs="100" fxFlex.sm="41" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="order--1">
                         <img src="assets/images/ark/fill-openings.png" alt="img">
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="order-1">
                         <h1> <strong> Fill Last Minute Openings </strong></h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been.
@@ -77,7 +85,7 @@
                             the industry's </p>
                     </div>
                     <div fxFlex.xs="100" fxFlex.sm="41" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class=" ">
-                        <img src="assets/images/ark/boost-revenue.png" alt="img">
+                        <img src="assets/images/ark/strengthnew.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -89,7 +97,7 @@
                     <div fxFlex.xs="100" fxFlex.sm="41" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class=" ">
                         <img src="assets/images/ark/boost-revenue.png" alt="img">
                     </div>
-                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="order-1">
                         <h1> <strong>Boost Practice Revenue </strong></h1>
                         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been.
@@ -110,7 +118,7 @@
                     </div>
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" class="meet--doctors" fxLayoutAlign="space-between start">
-                    <div class="text-center" fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="23" fxFlex.xl="23"
+                    <div class="text-center" fxFlex.xs="100" fxFlex.sm="23" fxFlex.md="23" fxFlex.lg="23" fxFlex.xl="23"
                         *ngFor="let i of docProfile">
 
                         <div class="profile--pic">
